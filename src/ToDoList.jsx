@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { toast } from 'react-toastify';
 import io from 'socket.io-client';
-const socket = io('http://localhost:4001');
+const socket = io('https://crudsocket.netlify.app/');
 export default function ToDoList() {
     const [toDoData, setToDoData] = useState([
         { name: 'Mayank', id: 1 },
